@@ -10,8 +10,9 @@ import SwiftUI
 struct RectangleView: View {
     
     //MARK: Stored Properties
-    let length: Double = 7
-    let width: Double = 5
+    //@State is a property wrapper
+    @State var length: Double = 70
+    @State var width: Double = 25
     
     
     //MARK: Computed Properties
@@ -28,7 +29,7 @@ struct RectangleView: View {
                 Image("RectangleImage")
                     .resizable()
                     .scaledToFit()
-                .frame(width: 250)
+                    .frame(width: 250)
                 
                 Spacer()
             }
@@ -37,13 +38,28 @@ struct RectangleView: View {
             Text("Length")
                 .bold()
                 .font(.title2)
+            
+            //Slider to control length
+            Slider(value: Binding.constant(length), in: 0...100,
+                   label: { Text("Length") },
+                   minimumValueLabel: {Text("0")},
+                   maximumValueLabel: { Text("100") })
+            
             //Use string interpolation \()
             Text("\(length)")
+            
             
             //Width
             Text("Width")
                 .bold()
                 .font(.title2)
+            
+            //Slider to control width
+            Slider(value: Binding.constant(width), in: 0...100,
+                   label: { Text("Width") },
+                   minimumValueLabel: {Text("0")},
+                   maximumValueLabel: { Text("100") })
+            
             //Use string interpolation \()
             Text("\(width)")
             
