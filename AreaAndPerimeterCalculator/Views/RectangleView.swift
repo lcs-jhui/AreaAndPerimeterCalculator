@@ -8,8 +8,55 @@
 import SwiftUI
 
 struct RectangleView: View {
+    
+    //MARK: Stored Properties
+    let length: Double = 7
+    let width: Double = 5
+    
+    
+    //MARK: Computed Properties
+    var area: Double {
+        return length * width
+    }
+    
+    //Show our user interface
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+            
+            HStack {
+                Image("RectangleImage")
+                    .resizable()
+                    .scaledToFit()
+                .frame(width: 250)
+                
+                Spacer()
+            }
+            
+            //Length
+            Text("Length")
+                .bold()
+                .font(.title2)
+            //Use string interpolation \()
+            Text("\(length)")
+            
+            //Width
+            Text("Width")
+                .bold()
+                .font(.title2)
+            //Use string interpolation \()
+            Text("\(width)")
+            
+            //Area
+            Text("Area")
+                .bold()
+                .font(.title2)
+            //Use string interpolation \()
+            Text("\(area)")
+            
+            Spacer()
+            
+        }
     }
 }
 
