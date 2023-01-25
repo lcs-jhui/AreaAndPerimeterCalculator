@@ -11,6 +11,10 @@
 		B95805AC2977059B0066C3D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95805AB2977059B0066C3D0 /* Assets.xcassets */; };
 		B95805AF2977059C0066C3D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95805AE2977059C0066C3D0 /* Preview Assets.xcassets */; };
 		B95805B72977064C0066C3D0 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95805B62977064C0066C3D0 /* RectangleView.swift */; };
+		B9EB42492979CEAA00FF91C4 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EB42482979CEAA00FF91C4 /* ListView.swift */; };
+		B9EB424B2979D13A00FF91C4 /* SquareBasedPyramid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EB424A2979D13A00FF91C4 /* SquareBasedPyramid.swift */; };
+		B9FE84D42980BB160003923F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FE84D32980BB160003923F /* Result.swift */; };
+		B9FE84D62980BC000003923F /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FE84D52980BC000003923F /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		B95805AB2977059B0066C3D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B95805AE2977059C0066C3D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B95805B62977064C0066C3D0 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		B9EB42482979CEAA00FF91C4 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		B9EB424A2979D13A00FF91C4 /* SquareBasedPyramid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareBasedPyramid.swift; sourceTree = "<group>"; };
+		B9FE84D32980BB160003923F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B9FE84D52980BC000003923F /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B95805A7297705990066C3D0 /* AreaAndPerimeterCalculatorApp.swift */,
+				B9FE84D22980BAFF0003923F /* Model */,
 				B95805B5297705D00066C3D0 /* Views */,
 				B95805AB2977059B0066C3D0 /* Assets.xcassets */,
 				B95805AD2977059C0066C3D0 /* Preview Content */,
@@ -70,9 +79,20 @@
 		B95805B5297705D00066C3D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B9EB42482979CEAA00FF91C4 /* ListView.swift */,
 				B95805B62977064C0066C3D0 /* RectangleView.swift */,
+				B9EB424A2979D13A00FF91C4 /* SquareBasedPyramid.swift */,
+				B9FE84D52980BC000003923F /* ResultView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B9FE84D22980BAFF0003923F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9FE84D32980BB160003923F /* Result.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B95805B72977064C0066C3D0 /* RectangleView.swift in Sources */,
+				B9FE84D42980BB160003923F /* Result.swift in Sources */,
+				B9EB424B2979D13A00FF91C4 /* SquareBasedPyramid.swift in Sources */,
 				B95805A8297705990066C3D0 /* AreaAndPerimeterCalculatorApp.swift in Sources */,
+				B9EB42492979CEAA00FF91C4 /* ListView.swift in Sources */,
+				B9FE84D62980BC000003923F /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
