@@ -102,6 +102,18 @@ struct RectangleView: View {
                     .font(.title)
                     .fontWeight(.bold)
                 Spacer()
+                
+                Button(action: {
+                    _ = Result(length: length,
+                                              width: width,
+                                              roots: result)
+                    priorResults.removeAll()
+                }, label: {
+                    Text("Clear History")
+                })
+                .buttonStyle(.bordered)
+                .padding()
+                
             }
             
             List(priorResults.reversed()) { currentResult in

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9381E7629898421000BB1E4 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9381E7529898421000BB1E4 /* TriangleView.swift */; };
 		B95805A8297705990066C3D0 /* AreaAndPerimeterCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95805A7297705990066C3D0 /* AreaAndPerimeterCalculatorApp.swift */; };
 		B95805AC2977059B0066C3D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95805AB2977059B0066C3D0 /* Assets.xcassets */; };
 		B95805AF2977059C0066C3D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95805AE2977059C0066C3D0 /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9381E7529898421000BB1E4 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 		B95805A4297705990066C3D0 /* AreaAndPerimeterCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AreaAndPerimeterCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95805A7297705990066C3D0 /* AreaAndPerimeterCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAndPerimeterCalculatorApp.swift; sourceTree = "<group>"; };
 		B95805AB2977059B0066C3D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				B95805B62977064C0066C3D0 /* RectangleView.swift */,
 				B9EB424A2979D13A00FF91C4 /* SquareBasedPyramid.swift */,
 				B9FE84D52980BC000003923F /* ResultView.swift */,
+				B9381E7529898421000BB1E4 /* TriangleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9381E7629898421000BB1E4 /* TriangleView.swift in Sources */,
 				B95805B72977064C0066C3D0 /* RectangleView.swift in Sources */,
 				B9FE84D42980BB160003923F /* Result.swift in Sources */,
 				B9EB424B2979D13A00FF91C4 /* SquareBasedPyramid.swift in Sources */,
